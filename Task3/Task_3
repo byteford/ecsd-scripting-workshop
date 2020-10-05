@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [ $1 == "pizza" ]; then
+ echo "thats right"
+ exit 0
+fi
+if [ $1 == "hotdog" ]; then
+ echo "nope"
+ exit 1
+fi
+if [ $1 == "cheese" ]; then
+ echo "really..."
+ exit 2
+fi
+
