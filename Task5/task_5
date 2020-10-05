@@ -1,0 +1,11 @@
+#!/bin/bash
+logedin=false
+password="Pizza"
+while [ $logedin == false ]; do
+echo "Enter password:"
+read Attempt
+if [[ $Attempt == $password ]]; then
+echo "yay"
+logedin=true
+fi
+done
