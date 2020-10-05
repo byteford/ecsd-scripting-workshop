@@ -1,0 +1,15 @@
+#!/bin/bash
+
+declare -a myarr
+
+echo "Enter urls:"
+
+read -a myarr
+
+
+
+for element in ${myarr[@]}
+do
+	echo $(ping -c 1 www.google.com) | grep "round-trip" | cut -f5 -d "/"
+	echo $element
+done
