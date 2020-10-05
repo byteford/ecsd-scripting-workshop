@@ -1,3 +1,4 @@
+#!/bin/bash
 //1 define a Var
 name="James sandford"
 
