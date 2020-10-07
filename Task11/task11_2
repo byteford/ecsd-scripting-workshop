@@ -1,0 +1,4 @@
+#!/bin/bash
+
+mkdir test 1> output.txt 2> error.txt
+mkdir test2 2&>1 > both.txt 
