@@ -1,4 +1,11 @@
 #!/bin/bash
 
 Arr=(lorem ipsom dolor net)
-echo $Arr[*]
+echo "replace"
+read replace
+echo "with"
+read with
+
+echo ${Arr[@]}
+
+echo "${Arr[@]/$replace/$with}"
