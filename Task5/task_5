@@ -9,3 +9,15 @@ echo "yay"
 logedin=true
 fi
 done
+
+first=$1
+second=$2
+point=$(($first -1))
+sum=0
+echo "first: $1 , second: $2"
+until [ $point == $second ]; do
+ point=$(($point + 1))
+ #echo $point
+ sum=$(($sum + $point**2))
+done
+echo $sum
