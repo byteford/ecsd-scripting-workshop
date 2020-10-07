@@ -12,3 +12,14 @@ if (( $(wc -w < Bacon.txt) > 20 )); then
 else
   echo "lesslone"
 fi
+echo "whats your option"
+
+read character
+
+case $character in
+  steak ) echo "you get steak"
+    ;;
+  salad ) echo "you get salad"
+    ;;
+  * ) echo " you need to pic right"
+esac
