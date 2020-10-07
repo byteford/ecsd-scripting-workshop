@@ -1,0 +1,4 @@
+#!/bin/bash
+wc -l < /var/log/install.log
+
+wc -l <  /var/log/install.log | sed 's/^.\{22\}//' | uniq

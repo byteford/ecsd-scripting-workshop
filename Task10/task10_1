@@ -1,0 +1,11 @@
+#!/bin/bash
+
+rm foo.txt
+rm baa.txt
+
+rm foobaa.txt
+
+echo "foo" > foo.txt
+echo "baa" > baa.txt
+
+cat foo.txt  baa.txt > foobaa.txt

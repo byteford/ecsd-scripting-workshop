@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo "whats the name of the process: "
+
+read proName
+
+pgrep $proName
+
+echo "whats the ID you want to kill"
+
+read ID
+
+echo " are you sure"
+
+kill $ID
