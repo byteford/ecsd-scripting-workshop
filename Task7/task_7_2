@@ -1,0 +1,14 @@
+#!/bin/bash
+
+add(){
+ echo $(( $1 + $2 ))
+}
+
+sub(){
+ echo $(($1 - $2))
+}
+if [[ $1 == "add" ]]; then
+echo $(add $2 $3)
+elif [[ $1 == "sub" ]]; then
+echo $(sub $2 $3)
+fi
