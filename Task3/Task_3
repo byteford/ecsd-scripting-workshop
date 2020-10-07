@@ -12,4 +12,3 @@ if [ $1 == "cheese" ]; then
  echo "really..."
  exit 2
 fi
-

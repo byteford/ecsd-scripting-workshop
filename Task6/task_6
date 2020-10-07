@@ -1,0 +1,4 @@
+#!/bin/bash
+
+Arr=(lorem ipsom dolor net)
+echo $Arr[*]

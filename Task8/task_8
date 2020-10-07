@@ -1,0 +1,10 @@
+#!/bin/bash
+
+wordCount () {
+	cat $1 | wc -w
+}
+
+
+wordCount $1
+
+

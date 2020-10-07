@@ -2,7 +2,7 @@
 
 echo $((73 %8))
 
-echo $((4**6 + 5**3 )) > STDOUT
+echo $((4**6 + 5**3 )) >&2
 echo $((4**6 + 5**3 ))
 
 echo " if args are the same say"
