@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "this is lowercase" > lower.txt
+buffer=0
+buffer=$(tr "[:lower:]" "[:upper:]" < lower.txt)
+
+echo $buffer > lower.txt
+cat lower.txt
