@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sed '/^$/d' testFile.txt | sed '/^[[:space:]]*$/d'
+
+# can use the -i flag to update the file or just save to a file at the end
