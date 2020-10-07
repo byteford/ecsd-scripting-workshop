@@ -1,0 +1,12 @@
+#!/bin/bash
+
+number=4
+count=0
+answer=1
+
+while [ $count -lt $number ]; do
+count=$((count+1))
+echo $count
+answer=$(($answer*$count))
+done
+echo $answer
