@@ -1,15 +1,20 @@
 #!/bin/bash
 
 declare -a myarr
-
+declare -a speedarr
 echo "Enter urls:"
 
 read -a myarr
 
-
+speed=0
 
 for element in ${myarr[@]}
 do
-	echo $(ping -c 1 www.google.com) | grep "round-trip" | cut -f5 -d "/"
-	echo $element
+  speed=$(ping -c 1 $element | grep "round-trip" | cut -f5 -d "/")
+  speedarr+=( "$element $speed")
+done
+echo "output"
+for element in ${speedarr[@]}
+do
+  echo $element
 done
