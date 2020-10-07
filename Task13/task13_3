@@ -1,0 +1,4 @@
+#!/bin/bash
+
+
+sed -e "s/\([^ ]*\) *\([^ ]*\)/\2, \1 /g"  names.txt | sed 's/.\{2\}$//' > newNames.txt
