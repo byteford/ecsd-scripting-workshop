@@ -1,0 +1,7 @@
+#!/bin/bash
+
+file=/var/log/install.log
+
+#cat $file
+
+awk 'END{print NR}' $file
