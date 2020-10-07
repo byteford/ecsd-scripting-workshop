@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#needs first arg of file location#needs first arg of file location#needs first arg of file location
 wordCount () {
 	cat $1 | wc -w
 }
