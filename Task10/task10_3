@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "Which program"
+
+read prog
+
+cat /var/log/install.log | grep $prog
