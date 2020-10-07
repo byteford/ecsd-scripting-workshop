@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ls -la |  awk -F ' ' '{sum+=$5;}END{print sum;}'
