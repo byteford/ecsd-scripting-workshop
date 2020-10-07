@@ -1,0 +1,21 @@
+#!/bin/bash
+
+rm even.txt
+rm odd.txt
+
+
+nums=$(cat sourcenums)
+echo Source
+for element in $nums; do
+  echo $element
+
+  if [[ $((element % 2)) == 0 ]]; then
+    echo $element >> even.txt
+else
+    echo $element >> odd.txt  
+fi 
+done
+echo even
+cat even.txt
+echo odd
+cat odd.txt
