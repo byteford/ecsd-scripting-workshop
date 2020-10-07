@@ -14,12 +14,28 @@ else
 fi
 echo "whats your option"
 
-read character
+read food
 
-case $character in
+case $food in
   steak ) echo "you get steak"
     ;;
   salad ) echo "you get salad"
     ;;
-  * ) echo " you need to pic right"
+  * ) echo "you need to pic right"
+esac
+
+echo "what time of day is it"
+
+read tod
+
+case $tod in
+  morning ) echo 'good morning'
+    ;;
+  noon ) echo 'lunch time'
+    ;;
+  afternoon ) echo 'yay nearly home time'
+    ;;
+  evning ) echo 'sleepy time'
+    ;;
+  * ) echo "needs to be morning noon afternoon or evning"
 esac
