@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# add */5 * * * * [loction]/Task3/Task_3  to crom to make it run every 5 mins
+
 if [ $1 == "pizza" ]; then
  echo "thats right"
  exit 0
@@ -12,3 +14,5 @@ if [ $1 == "cheese" ]; then
  echo "really..."
  exit 2
 fi
+
+
