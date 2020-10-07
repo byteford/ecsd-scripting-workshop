@@ -7,5 +7,8 @@ if [[ "$currentDate" == "13:00" ]]; then
 fi
 
 
-Words=$(wc -w Bacon.txt)
-echo $Words | cut -c2 
+if (( $(wc -w < Bacon.txt) > 20 )); then
+  echo "toolong"
+else
+  echo "lesslone"
+fi
